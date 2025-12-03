@@ -5,7 +5,7 @@ local DataModule = require(LocalPlayer.DataModule)
 local OriginalGetModCharacter = DataModule.GetModCharacter
 
 -- TerminalVibes the GOAT.
--- blud told me to use metatables instead of doing it by 
+-- blud told me to use metatables instead of doing it by loops
 -- so i did it and it was hard at first but oh boy it was fun
 DataModule.GetModCharacter = function(...)
     -- some executors identity of 8 fucks up the way some of roblox's [C] functions work
