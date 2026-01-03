@@ -24,9 +24,10 @@ DataModule.GetModCharacter = function(...)
         local Properties = Item.Properties
         local RealProperties = DataModule.GetItemById(ID).Values
         -- turns out doing metatables lags tf out of your game
-        -- since the game repeatedly calls `GetModCharacter` alot
-        RealProperties.MA = 99999999
-        Properties.MaxAmmo = 99999999 
+        -- since the game repeatedly uses `GetModCharacter`
+        Properties.Ammo = 99999999 
+        RealProperties.A = 99999999
+        
     end
 
     return CharacterData
